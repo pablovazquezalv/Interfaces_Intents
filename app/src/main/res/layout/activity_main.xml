@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/camara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojo"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="abrir camara" />
+    <Button
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/verde"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="abrir video"
+        />
+    <Button
+        android:id="@+id/gato"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="abrir gato"
+        />
+    <Button
+        android:id="@+id/utt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/ginda"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:text="playera"
+        />
+
+
+</LinearLayout>
