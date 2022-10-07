@@ -4,46 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@color/black"
     android:orientation="vertical"
-
-    android:background="@color/black">
+    tools:context=".MainActivity">
 
     <Button
         android:id="@+id/camara"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/rojo"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:layout_margin="30dp"
         android:text="abrir camara" />
+
     <Button
         android:id="@+id/web"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/verde"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:layout_margin="30dp"
-        android:text="abrir video"
-        />
+        android:text="abrir video" />
+
     <Button
         android:id="@+id/gato"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:layout_margin="30dp"
-        android:text="abrir gato"
-        />
+        android:text="abrir gato" />
+
     <Button
         android:id="@+id/utt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/ginda"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
         android:gravity="center"
-        android:layout_margin="30dp"
-        android:text="playera"
-        />
+        android:text="playera" />
+
+    <Button
+        android:id="@+id/btndatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Mostrar Datos" />
+
+    <Button
+        android:id="@+id/llamadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="permisos (llamar)" />
 
 
 </LinearLayout>

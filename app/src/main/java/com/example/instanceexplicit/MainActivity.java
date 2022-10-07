@@ -9,9 +9,9 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity {
 
-    Button btnweb,btncamara,btngatito,btnutt;
+    Button btnweb,btncamara,btngatito,btnutt,btndato,btnllamadas;
 
     String _url="https://www.youtube.com/watch?v=VtKcDwz6hiM";
     @Override
@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnweb=findViewById(R.id.web);
         btngatito=findViewById(R.id.gato);
         btnutt=findViewById(R.id.utt);
+        btndato=findViewById(R.id.btndatos);
+        btnllamadas=findViewById(R.id.llamadas);
 
         btncamara.setOnClickListener(new View.OnClickListener()
         {
@@ -62,13 +64,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
+        btndato.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),MostrarDatos.class));
+
+            }
+        });
+
+        btnllamadas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Llamadas.class));
+            }
+        });
+
     }
 
-
-    @Override
-    public void onClick(View v) {
-
-    }
 
 
 }

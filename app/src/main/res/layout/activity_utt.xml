@@ -23,6 +23,20 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:background="@color/verde"></View>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_weight="5"
+        android:background="@color/white"
+        android:fontFamily="sans-serif-black"
+        android:gravity="bottom"
+        android:text="O.PERALTA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -39,19 +53,6 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:background="#FFFFFF"></View>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_weight="5"
-        android:background="@color/white"
-        android:fontFamily="sans-serif-black"
-        android:gravity="bottom"
-        android:text="O.PERALTA"
-        android:textColor="@color/black"
-        android:textAlignment="center"
-        android:textSize="40dp" />
 
     <View
         android:layout_width="match_parent"

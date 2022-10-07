@@ -30,17 +30,13 @@ public class Splash extends AppCompatActivity implements View.OnClickListener{
 
             public void onTick(long milisUntilFinished)
             {
-
                 TextView tiempo=findViewById(R.id.b2);
-
                 tiempo.setText(""+milisUntilFinished /1000);
-
-
             }
 
-            public void onFinish() {
+            public void onFinish()
+            {
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
-
             }
         }.start();
 
