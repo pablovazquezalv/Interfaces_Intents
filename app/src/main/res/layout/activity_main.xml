@@ -45,7 +45,7 @@
         android:layout_margin="20dp"
         android:backgroundTint="@color/black"
         android:gravity="center"
-        android:text="playera" />
+        android:text="Abrir siautt" />
 
     <Button
         android:id="@+id/btndatos"

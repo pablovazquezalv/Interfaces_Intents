@@ -18,6 +18,6 @@ TextView tvDatos,tvDatos2;
         Bundle recibedatos=getIntent().getExtras();
         String info =recibedatos.getString("keyDatos");
 
-        tvDatos.setText(info);
+        tvDatos.setText(info+" Buenas Tardes");
     }
 }

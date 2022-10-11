@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.instanceexplicit">
-<uses-permission android:name="android.permission.SEND_SMS" />
+    package="com.example.instanceexplicit" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -15,11 +17,10 @@
         android:label="@string/MyAppPablo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
         android:theme="@style/Theme.InstanceExplicit"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".Llamadas"
+            android:name=".Llamar"
             android:exported="false" />
         <activity
             android:name=".Datos"
@@ -28,14 +29,11 @@
             android:name=".MostrarDatos"
             android:exported="false" />
         <activity
-            android:name=".Utt"
-            android:exported="false" />
-        <activity
             android:name=".Gato"
             android:exported="false" />
         <activity
             android:name=".Splash"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

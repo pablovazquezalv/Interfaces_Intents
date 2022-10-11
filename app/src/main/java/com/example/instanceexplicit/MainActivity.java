@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnweb,btncamara,btngatito,btnutt,btndato,btnllamadas;
 
     String _url="https://www.youtube.com/watch?v=VtKcDwz6hiM";
+    String _url2="https://uttorreon.mx/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,7 +61,9 @@ public class MainActivity extends AppCompatActivity {
         btnutt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Utt.class));
+                Uri _link= Uri.parse(_url2);
+                Intent i=new Intent(Intent.ACTION_VIEW,_link);
+                startActivity(i);
             }
         });
 
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         btnllamadas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Llamadas.class));
+                startActivity(new Intent(getApplicationContext(),Llamar.class));
             }
         });
 

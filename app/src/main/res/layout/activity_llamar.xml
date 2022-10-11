@@ -5,13 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".Llamadas">
+    tools:context=".Llamar">
 
-    <Button
-        android:id="@+id/button"
+
+
+    <EditText
+        android:id="@+id/textnumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:hint="Phone"
+        android:text="8717696477"
+        android:fontFamily="sans-serif-black"
+        android:inputType="number"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/llamarapablo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/llamarapablo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LLAMAR"
+        android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
